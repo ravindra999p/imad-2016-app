@@ -27,12 +27,11 @@ body {
                  
                   padding-left: 20px;
  }
-footer{
-    font-family: sans-serif;
-    background-color: lightgrey;
-    padding-top:60px;
-     text-align: center;
-    font-size: 300%;
+footer {
+    font-family: cursive;
+    background-color: burlywood;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 200%;
     font-weight: bold;
-    
 }
