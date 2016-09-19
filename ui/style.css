@@ -27,4 +27,12 @@ body {
                  
                   padding-left: 20px;
  }
-
+footer{
+    font-family: sans-serif;
+    background-color: lightgrey;
+    padding-top:60px;
+     text-align: center;
+    font-size: 300%;
+    font-weight: bold;
+    
+}
