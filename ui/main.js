@@ -10,4 +10,4 @@ function moveRight(){
 img.onclick = function(){
     var intervel=setIntervel(moveRight,50);
     
-};
+}
