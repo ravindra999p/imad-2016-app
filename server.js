@@ -10,7 +10,8 @@ var articles= {
     title:'Article 1 | Ravindra',
     heading:'Article one',
     date:'19-09-2016',
-    content: ` <p> Hi this is first .Hi this is first article.Hi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first article new using var and functions</p>`
+    content: ` <p> Hi this is first .Hi this is first article.Hi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first article new using var and functions</p>
+         <img src="/ui/nani.jpg" class="img-medium"/>`
     
 },
 'article-two':{
@@ -45,6 +46,7 @@ function createTemplate(data){
         </head>
    
     <body>
+        <header></header>
         <div class="container">
         <div>
             <a href="/">HOME</a>
@@ -60,10 +62,7 @@ function createTemplate(data){
       ${content}
         </div>
         </div>
-        
-        
-        
-        
+         <footer></footer>
     </body>
             </html>`;
             return htmlTemplate;
@@ -94,8 +93,8 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+app.get('/ui/nani.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'nani.jpg'));
 });
 
 
