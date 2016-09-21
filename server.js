@@ -75,17 +75,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/about', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'about.html'));
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-app.get('/team', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'team.html'));
-});
-
-app.get('/contact', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
-});
 
 app.get('/:articleName', function (req, res) {
     var articleName=req.params.articleName;
