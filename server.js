@@ -62,7 +62,7 @@ function createTemplate(data){
       ${content}
         </div>
         </div>
-         <footer></footer>
+         <footer> </footer>
     </body>
             </html>`;
             return htmlTemplate;
