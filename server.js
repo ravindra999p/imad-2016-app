@@ -79,6 +79,24 @@ app.get('/ui/main.js', function (req, res) {
 });
 
 
+var counter= 0;
+app.get('/counter', function (req, res) {
+    counter= counter + 1;
+  res.send(counter.toString());
+});
+
+var names=[];
+app.get('/submit-name/',function(req,res){  // URL ://submit-name?namename=xxxx
+    //get the name from the request
+    var name = req.query.name; //1000
+    names.push(name);
+    // JSON ; java script obejct notation
+    res.send(JSON.stringify(names));
+    
+    
+});
+
+
 app.get('/:articleName', function (req, res) {
     var articleName=req.params.articleName;
   res.send(createTemplate(articles[articleName]));
