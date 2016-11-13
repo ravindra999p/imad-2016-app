@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
-    padding-top:60px;
+  
+   padding-top: 60px;
 }
 
 .center {
@@ -16,10 +16,17 @@ body {
     font-weight: bold;
 }
 
+.img-small {
+    height: 40px;
+}
+
 .img-medium {
     height: 200px;
 }
-.container {
+.img-high{
+    height: 500px;
+}
+ .container {
                  max-width: 800px;
                  margin: 0 auto;
                  color: gray;
@@ -27,19 +34,39 @@ body {
                  
                   padding-left: 20px;
  }
-footer {
-    font-family: cursive;
-    background-color: burlywood;
-    padding-top: 60px;
-    text-align: center;
-    font-size: 200%;
-    font-weight: bold;
+ div{
+     color: green;
+ }
+ 
+ comment {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
+.commenter {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+#comment_form {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+ 
 footer {
     font-family: cursive;
+    background-color: brown;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+header {
+    font-family: cursive;
     background-color: burlywood;
- 
-    font-size: 200%;
+    text-align: left;
+    font-size: 150%;
     font-weight: bold;
 }
