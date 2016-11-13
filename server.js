@@ -8,8 +8,8 @@ var session = require('express-session');
 
 
 var config={
-    user:'yaswanth8',
-    database:'yaswanth8',
+    user:'ravindra999p',
+    database:'ravindra999p',
     host:'db.imad.hasura-app.io',
     port:'5432',
     password: process.env.DB_PASSWORD
@@ -65,7 +65,7 @@ function createTemplate(data){
                                  <center>Loading comments...</center>
                                      </div>
                  </div>
-                 <footer> ${foot} <div> <p align="right"><a href="http://yaswanth8.imad.hasura-app.io/articles/article-feedback">Send feedback</a></p></div></footer>    
+                 <footer> ${foot} <div> <p align="right"><a href="http://ravindra999p.imad.hasura-app.io/articles/article-feedback">Send feedback</a></p></div></footer>    
                  <script type="text/javascript" src="/ui/article.js"></script>
          </body>
             </html>`;
