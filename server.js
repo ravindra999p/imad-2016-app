@@ -8,8 +8,8 @@ var session = require('express-session');
 
 
 var config={
-    user:'ravindra999p',
-    database:'ravindra999p',
+    user:'yaswanth8',
+    database:'yaswanth8',
     host:'db.imad.hasura-app.io',
     port:'5432',
     password: process.env.DB_PASSWORD
@@ -65,7 +65,7 @@ function createTemplate(data){
                                  <center>Loading comments...</center>
                                      </div>
                  </div>
-                 <footer> ${foot} <div> <p align="right"><a href="http://ravindra999p.imad.hasura-app.io/articles/article-feedback">Send feedback</a></p></div></footer>    
+                 <footer> ${foot} <div> <p align="right"><a href="http://yaswanth8.imad.hasura-app.io/articles/article-feedback">Send feedback</a></p></div></footer>    
                  <script type="text/javascript" src="/ui/article.js"></script>
          </body>
             </html>`;
@@ -106,7 +106,7 @@ app.post('/create-user', function (req, res) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
-          res.send('User successfully created: ' + username);
+          res.send('User successfully created: '+ username);
       }
    });
 });
@@ -220,6 +220,13 @@ app.post('/submit-comment/:articleName', function (req, res) {
         res.status(403).send('Only logged in users can comment');
     }
 });
+// count
+var counter = 0;
+app.get('/counter',function(req,res){
+    counter = counter+1;
+   res.send(counter.toString()); 
+});
+
 
 app.get('/articles/:articleName', function (req, res) {
   // SELECT * FROM article WHERE title = '\'; DELETE WHERE a = \'asdf'
@@ -250,29 +257,11 @@ app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-
-
-
-
-
-
-
-
-app.get('/ui/fb.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
+app.get('/feedback',function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'feedback.html'));
 });
 
-app.get('/ui/twitter.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'twitter.png'));
-});
 
-app.get('/ui/instagram.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'instagram.png'));
-});
-
-app.get('/ui/linkedin.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'linkedin.png'));
-});
 
 
 
