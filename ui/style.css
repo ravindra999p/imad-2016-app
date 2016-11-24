@@ -1,12 +1,21 @@
 body {
-    font-family: sans-serif;
-  
-   padding-top: 60px;
+    font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+   padding-top: 5px;
+     background-image: url("http://wallpapercave.com/wp/UyNOzwq.jpg");
 }
 
 .center {
     text-align: center;
 }
+.myarticles{
+    
+   font-family: "Lucida Console", Monaco, monospace;
+    text-align: center;
+    
+    
+}    
+
 
 .text-big {
     font-size: 300%;
@@ -17,7 +26,7 @@ body {
 }
 
 .img-small {
-    height: 40px;
+    height: 50px;
 }
 
 .img-medium {
@@ -26,47 +35,59 @@ body {
 .img-high{
     height: 500px;
 }
- .container {
+
+.loginbox {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    
+    background-color:#7D7B7B;
+    
+    
+}
+
+
+ .loginbody {
                  max-width: 800px;
                  margin: 0 auto;
-                 color: gray;
-                 font-family: sans-serif;
+                 color: black;
+                 font-family: "Times New Roman", Times, serif;
                  
                   padding-left: 20px;
  }
- div{
-     color: green;
- }
+ 
  
  comment {
-    margin-left: 10px;
-    padding-bottom: 10px;
+    margin-left: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #ccc;
 }
 
 .commenter {
+    font-family: "Times New Roman", Times, serif;
     font-style: italic;
     font-size: 0.8em;
 }
 
 #comment_form {
-    margin-left: 10px;
-    padding-bottom: 10px;
+    margin-left: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #ccc;
 }
  
 footer {
-    font-family: cursive;
+    font-family: "Times New Roman", Times, serif;
     background-color: brown;
-    padding-top: 60px;
+    padding-top: 40px;
     text-align: center;
-    font-size: 150%;
+    font-size: 130%;
     font-weight: bold;
 }
 header {
-    font-family: cursive;
-    background-color: burlywood;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #6B6E6D;
     text-align: left;
     font-size: 150%;
+    padding-top: 10px;
     font-weight: bold;
 }
+
