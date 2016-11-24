@@ -8,8 +8,8 @@ var session = require('express-session');
 
 
 var config={
-    user:'yaswanth8',
-    database:'yaswanth8',
+    user:'ravindra999p',
+    database:'ravindra999p',
     host:'db.imad.hasura-app.io',
     port:'5432',
     password: process.env.DB_PASSWORD
@@ -95,9 +95,7 @@ app.get('/hash/:input', function(req, res) {
 });
 
 app.post('/create-user', function (req, res) {
-   // username, password
-   // {"username": "tanmai", "password": "password"}
-   // JSON
+   
    var username = req.body.username;
    var password = req.body.password;
    var salt = crypto.randomBytes(128).toString('hex');
