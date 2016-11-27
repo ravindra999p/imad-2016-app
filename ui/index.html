@@ -72,26 +72,30 @@
             </div>
         </div>
 		<div id="writetome">
-		<div style="width:99.22%;text-align:center;height:20px;padding:5px;color:white;font-size:30px;margin-bottom:10px;padding-top:15px"><b>Write To ME!</b></div>
+		<div style="width:99.22%;text-align:center;height:20px;padding:5px;color:white;font-size:30px;margin-bottom:10px;padding-top:15px"><b>Login or register</b></div>
 		
-		<input type="text" id="authorname"  value="Guest" required readonly><br/>
-		
-		<div onclick="bold();" id="bold" style="margin-left:16%;cursor:pointer;height:12px;background-color:white;font-family:sans-serif !important;width:10px;padding:8px;float:left;margin-top:2%"><b>B</b></div>
-       <div onclick="italic();" id="italic" style="margin-left:0.1%;cursor:pointer;background-color:white;height:12px;font-family:sans-serif !important;width:10px;padding:8px;margin-top:2%;float:left"><i>I</i></div>
-        <div onclick="normal();" id="normal" style="margin-left:0.1%;cursor:pointer;background-color:white;height:12px;font-family:sans-serif !important;width:10px;padding:8px;margin-top:2%;float:left">N</div>
-        <div onclick="underline();" id="underline" style="margin-left:0.1%;cursor:pointer;background-color:white;height:12px;font-family:sans-serif !important;width:10px;padding:8px;margin-top:2%;float:left"><u>U</u></div>
-        <div onclick="center()" id="center" style="float:left;margin-top:2%;margin-left:0.1%;background-color:white"><img  src="/ui/cn.png"   style="cursor:pointer;height:18px;font-family:sans-serif !important;width:15px;padding:4px"></div>
-        <div onclick="left();" id="left" style="background-color:white;float:left;margin-top:2%;margin-left:0.1%;"><img src="/ui/lf.png"  style="cursor:pointer;height:18px;font-family:sans-serif !important;width:15px;padding:4px"></div>
+	<div class="loginbody">
         
-		
-       <textarea id="names" onkeypress="onTestChange();" rows="10" cols="111" placeholder="Please write FEEDBACK for this web app" required></textarea>
-       <br/>
-       
-	   <input type="submit" id="submitbtn" value="POST">
-	  
-	   <div id="namelist" style="font-family:sans-serif !important">
-			
-       </div>
+                    
+                    <hr/>
+                        <div id="login_area">
+                            <center>Loading login status...</center>
+                    </div>
+                    <hr/>
+                        <h1 >Articles</h1>
+                                <div id="articles" class="myarticles">
+                                         <center>Loading articles...</center>
+                                </div>
+                      <div style="width:70%;padding-top: 10px;" id="article_area">
+                <center>Create an article...</center>
+                      </div> 
+                      
+                   
+                   <br/>
+                   <hr/>
+                   
+              </div>  
+            
 		</div>
 		
 		<div id="database" style="text-align:center;padding-top:10px">
