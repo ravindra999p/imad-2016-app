@@ -1,57 +1,155 @@
 <!doctype html>
 <html>
     <head>
-        <title> Homepage </title>
-         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link href="/ui/style.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="/ui/self.jpg" />
+        <script src="https://cdn.rawgit.com/yahoo/xss-filters/master/dist/xss-filters.js"></script>
+        <meta charset="UTF-8">
+        <title>Yash Patel-Welcome to my page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
     </head>
     <body>
-                        <header>
-                                 <a href="/">Home</a>
-                            
-
-                         </header>
+        <div id="register" style="position:fixed;display:none;top:10px;right:35%;height:auto;background-color:white;border-radius:8px;width:30%;z-index:4">
+            <div style="text-align:center;padding:10px"><h3>Register</h3></div>
+            <hr/>
+            <div style="width:100%;padding:10px"><center>
+                <input id="username" style="margin:8px;width:250px;height:30px;text-align:center" type="text" name="username" placeholder="Username"><br/>
+                <input id="password" style="margin:8px;width:250px;height:30px;text-align:center" type="password" name="password" placeholder="Password"><br/>
+                <input id="cpassword" style="margin:8px;width:250px;height:30px;text-align:center" type="password"  placeholder="Confirm Password"><br/>
+                <input onclick="reg();" style="margin:10px;height:30px;width:100px;border:none;background-color:black;color:white" type="submit" value="Register"></center>
+            </div>
+            <hr/>
+            <div id="close" style="padding:6px;float:right;background-color:black;color:white;margin-bottom:5px;margin-right:5px">close</div>
+        </div>
         
-                <div class="loginbody">
+        <div id="container">
+        <div id="mc" style="position:absolute;top:5px;left:0px"></div>
+         <div class="left" id="header">
+             <input id='lusername' type="text" placeholder="Username" name="username" style="position:absolute;top:5px;right:250px">
+              <input id='lpassword' type="password" placeholder="Password" name="password" style="position:absolute;top:5px;right:70px">
+              <input id='lsubmit'  type="submit" value="Login" style="position:absolute;top:5px;right:20px;border:none; width:45px;height:20px;cursor:pointer">
+              <input id='logout' onclick="logout()" type="submit" value="Logout" style="display:none;position:absolute;top:5px;right:20px;border:none; width:55px;height:20px;cursor:pointer">
+              <a href="#mc"><p id="reg" style="position:absolute;top:20px;right:20px;color:white;text-decoration:underline;font-size:13px;cursor:pointer" >Register</p></a>
+            <a href="#mc"><img id ="logo" src="/ui/logo.png" class="img-medium"/></a>
+            <div id="menu">
+                  <a href="#db"><div class="menubar"><div>Learn Database</div></div></a>
+                <a href="#wt"><div class="menubar"><div>Write to Me!</div></div></a>
+                 <a href="#am"><div class="menubar"><div>Know About ME!</div></div></a>
+                <a href="#mc"><div class="menubar"><div>Home</div></div></a>
+                </div>
+        </div>
         
-                     <div class="center">
-                             <img src="https://scontent.fbom3-1.fna.fbcdn.net/v/t1.0-9/10672294_574384546001504_9158848198326900541_n.jpg?oh=1422e3f4ac92d0290a4fb21844a6a8c7&oe=58B0BB4B" class="img-medium"/>
-                      <h1> Personal Application</h1>
-                    </div>
-                     <hr/>
-                        <div id="login_area">
-                            <center>Loading login status...</center>
-                    </div>
-                    <hr/>
-                        <h1 >Articles</h1>
-                                <div id="articles" class="myarticles">
-                                         <center>Loading articles...</center>
-                                </div>
-                        <div class="footer">
-                        </div>
-                  
+        <div id="content">
+            <div id="maincontent">
+                 <img id="selfimg" src="/ui/self.jpg" alt="personal pic"/>
+                 
+                <font id="name"><b>Welcome</b></font>
+               
+               <br/>
+               
+                
+                <p id="details">
                    
+                    <font style="font-family:Copperplate, 'Copperplate Gothic Light', fantasy;fonts-size:40;">I m <b>Yash Patel</b></font><br/><br/>
                    <br/>
-                   <hr/>
-                   
-              </div>  
+                    <font style="font-family:Copperplate, 'Copperplate Gothic Light', fantasy;fonts-size:30;" >Computer Engineering
+                                        (BTECH, 5th Semester)<br/><br/>And I m <br/>
+                    <font id="age" style="font-family:Copperplate, 'Copperplate Gothic Light', fantasy;fonts-size:30;"></font><br/><br/>
+                    
+                  </p> 
+         
+             
+        </div>  
+       
+            </div>
+                <font id="am"></font>
+        <div id="aboutme">
             
-      
+            <div id="adetails"><b>Know About ME!</b></div>
+           
+            <a href="https://twitter.com/patel_yash1996" target="_blank"><img class=".aboutmeimg" src="/ui/twitter.png"/></a>
+            <a href="https://in.linkedin.com/in/yash-patel-52a22710b" target="_blank"><img class=".aboutmeimg" src="/ui/icon.png"/></a>
+           
+            <a href="https://www.facebook.com/patelyashimpossible" target="_blank"><img class=".aboutmeimg" src="/ui/facebook.png"/></a>
+            <a href="https://drive.google.com/file/d/0BwlJpZ-1-XwldU1aVnhVa2VJdUU/view?usp=sharing" target="_blank"><img class=".aboutmeimg" src="/ui/resume.png"/></a>
+             
+            <div id="adetail"> <b>Things Which Interests ME!</b> </div>
+            <div id="wt"></div>
+            <div id="known">
+                <img style="width:5% !important ;margin-left:13% !important"  src="/ui/java.png"/>
+                <img style="width:5% !important ;margin-left:13% !important"  src="/ui/c.png"/>
+                <img style="width:5% !important ;margin-left:13% !important"  src="/ui/arduino.png"/>
+                <img style="width:5% !important ;margin-left:13% !important"  src="/ui/sql.png"/>
+                <img style="width:5% !important ;margin-left:13% !important" src="/ui/wt.png"/> 
+                
+            </div>
+        </div>
+		<div id="writetome">
+		<div style="width:99.22%;text-align:center;height:20px;padding:5px;color:white;font-size:30px;margin-bottom:10px;padding-top:15px"><b>Write To ME!</b></div>
+		
+		<input type="text" id="authorname"  value="Guest" required readonly><br/>
+		
+		<div onclick="bold();" id="bold" style="margin-left:16%;cursor:pointer;height:12px;background-color:white;font-family:sans-serif !important;width:10px;padding:8px;float:left;margin-top:2%"><b>B</b></div>
+       <div onclick="italic();" id="italic" style="margin-left:0.1%;cursor:pointer;background-color:white;height:12px;font-family:sans-serif !important;width:10px;padding:8px;margin-top:2%;float:left"><i>I</i></div>
+        <div onclick="normal();" id="normal" style="margin-left:0.1%;cursor:pointer;background-color:white;height:12px;font-family:sans-serif !important;width:10px;padding:8px;margin-top:2%;float:left">N</div>
+        <div onclick="underline();" id="underline" style="margin-left:0.1%;cursor:pointer;background-color:white;height:12px;font-family:sans-serif !important;width:10px;padding:8px;margin-top:2%;float:left"><u>U</u></div>
+        <div onclick="center()" id="center" style="float:left;margin-top:2%;margin-left:0.1%;background-color:white"><img  src="/ui/cn.png"   style="cursor:pointer;height:18px;font-family:sans-serif !important;width:15px;padding:4px"></div>
+        <div onclick="left();" id="left" style="background-color:white;float:left;margin-top:2%;margin-left:0.1%;"><img src="/ui/lf.png"  style="cursor:pointer;height:18px;font-family:sans-serif !important;width:15px;padding:4px"></div>
         
+		
+       <textarea id="names" onkeypress="onTestChange();" rows="10" cols="111" placeholder="Please write FEEDBACK for this web app" required></textarea>
+       <br/>
+       
+	   <input type="submit" id="submitbtn" value="POST">
+	  
+	   <div id="namelist" style="font-family:sans-serif !important">
+			
+       </div>
+		</div>
+		
+		<div id="database" style="text-align:center;padding-top:10px">
+		    <font style="color:white"><h2>LEARN DATABASE</h2><br/>Here is a Small Entry in my database table for user, which contains field like Name of user, Content you want to tell, and your Email( which is optional).<br/> </font>
+		    <div style="margin-top:10px;padding-top:15px;padding-bottom:15px">
+		    <table align="center" border="1px solid white" >
+		        <tr>
+		            <td>Name</td>
+		            <td>Content</td>
+		            <td>Email(optional)</td>
+		            
+		        </tr>
+		        <tr>
+		           <td><input type="text" id="author" name="author"></td>
+		           <td><input type="text" id="contents" name="content"></td>
+		           <td><input type="email" id="email" name="email"></td>
+		        </tr>
+		        <tr  style="text-align:center;padding:5px">
+		            
+		            <td colspan="3"><input type="submit" id="datasubmit" value="Insert Your Details in My Database"></td>
+		           
+		      </tr>
+		        
+		        </table>
+		        </div>
+		        <div id="inserttable" style="padding-bottom:15px"></div>
+		    </div>
+            <div id="footer">Made with &hearts; by Yash Patel&#9819;<br/><br/>&copy; Copyright Reserverd</div>
+       <!-- <a href="/article-one">Article one</a>-->
+		</div>
+        <div id="quickview">Features!</div>
+        <div id="feature">Hello People! <br/>In this Web App:
+        <ul>
+            <li>User Can view my profile</li>
+            <li>User Can view my Facebook, Twitter, linkedin Page</li>
+            <li>User Can view and download my Resume</li>
+            <li>User can Write a post to me which will be public. </li>
+            <li>A small concept of Database has been introduced in which user can fill the details and stored it in my database</li>
+            <li>Before Writing the comments and feedback user must need to login but if they don't want to then post will be done with name as 'GUEST'</li>
+           <br/> NOTE: This web app is completely for study purpose i.e. in this web app i had introduced every possible module that I learned in IMAD.
+        </ul>
+        <div id="mains"><b>Return to HOME PAGE!</b></div>
+        </div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
-    
-    <footer> 
-           
-                
-                 <a href="https://www.facebook.com/ravindra.puchakaayala" target="_blank"> <img src="https://raw.githubusercontent.com/yaswanth8/imad-2016-app/master/ui/fb.png" class="img-small"/> </a>
-                <a href="https://twitter.com/ravindra999p" target="_blank">  <img src="https://raw.githubusercontent.com/yaswanth8/imad-2016-app/master/ui/twitter.png"  class="img-small"/> </a>
-                <a href= "https://www.instagram.com/ravindra__nani/" target="_blank"><img src="https://raw.githubusercontent.com/yaswanth8/imad-2016-app/master/ui/instagram.png" class="img-small"/> </a>
-                <a href= "https://www.linkedin.com/in/ravindra-putchakayala-8a142b12a?trk=nav_responsive_tab_profile_pic" target="_blank"><img src="https://raw.githubusercontent.com/yaswanth8/imad-2016-app/master/ui/linkedin.png"  class="img-small"/> </a>
-                <div class="center"> Copyright © Ravindra putchakayala 2016 </div>
-
-         <p class="center"> Number of Visitors: <span id="count"> </span> </p>
-                <div> <p align="right"><a href="http://ravindra999p.imad.hasura-app.io/feedback">Feedback </a></p></div>
-        
-        </footer>
-    </body>  
+    </body>
+</html>
