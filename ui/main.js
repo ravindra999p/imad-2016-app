@@ -125,6 +125,44 @@ request.onreadystatechange = function() {
     request.send(null);
 }
 
+var d = new Date();
+var years = 22;
+var months = 4;
+var days = d.getDay();
+var hrs = d.getHours();
+var min = d.getMinutes();
+var sec = (new Date()).getSeconds();
+
+var i=0;
+setInterval("agecount();",1000);
+function agecount()
+{
+    sec=sec+1;
+    if(sec==60)
+    {   sec=0;
+        min++;
+        if(min==60)
+        {   min=0;
+            hrs++;
+            if(hrs==24)
+            {   hrs=0;
+                days++;
+                if(days==30)
+                {   days=0;
+                    months++;
+                    if(months==12)
+                    {
+                        months=0;
+                        years++;
+                    }
+                }
+                
+            }
+        }
+    }
+    document.getElementById("age").innerHTML=""+years+" years : "+months+" months : "+days+" days : "+hrs+" hrs : "+min+" min : "+sec+" sec old";
+}
+
 function loadArticles () {
         // Check if the user is already logged in
     var request = new XMLHttpRequest();
