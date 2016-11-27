@@ -4,9 +4,9 @@ function loadLoginForm () {
             <div class="loginbox">
             <center>
           <ul style="list-style-type:none" class="loginbox" >
-       <h3>Login or Register to comment these articles below</h3>  
+       <h2>Login or Register to comment these articles below</h2>  
        <li> User  ID:  <input type="text" id="username" placeholder="Username" />  </li>
-       <li> Password:  <input type="password" id="password" />  <li> 
+       <li> Password:  <input type="password" id="password" placeholder="password" />  <li> 
         </ul>
     <br/><br/>
         <input type="submit" id="login_btn" value="Login" />
